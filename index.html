@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School project</title>
+</head>
+<body>
+<div id="topbar"></div>
+<div class="homepg" id="frstpg"></div>
+<div id="instructions">Click a coat and scroll</div>
+<div id="abouttag">*About</div>
+<div id="maintag">*Main</div>
+<div id="faqtag">*FAQ</div>
+<div id="secpg"></div>
+<div id="thirdpg"></div>
+<div id="frthpg"></div>
+<div id="faqpg"></div>
+<div id="aboutpg"></div>
+<div id="hangar"></div>
+<div id="hangar2"></div>
+<div id="hangar3"></div>
+<div id="maincoat"></div>
+<div id="faqcoat"></div>
+<a href="about.html">
+<div id="aboutcoat"></div>
+</a>
+<div id="rod"></div>
+
+<textarea id="srchbr" cols="50" rows="1"></textarea>
+<style>
+
+body{
+    overflow-x: hidden;
+}
+
+#abouttag {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    width: 6%;
+    height: 5%;
+    font-size: x-large;
+    background-color: aliceblue;
+}
+
+#faqtag {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    width: 5%;
+    height: 5%;
+    font-size: x-large;
+    background-color: aliceblue;
+}
+
+#maintag {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 5%;
+    height: 5%;
+    font-size: x-large;
+    background-color: aliceblue;
+}
+
+#instructions {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 50%;
+    height: 10%;
+    font-size: x-large;
+}
+
+#aboutpg {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 92%;
+    background-color: paleturquoise;
+}
+
+#faqpg {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 92%;
+    background-color: goldenrod;
+}
+
+#frthpg {
+    position: absolute;
+    top: 284%;
+    left: 0%;
+    width: 0%;
+    height: 92%;
+    background-color: brown;
+}
+
+
+#thirdpg {
+    position: absolute;
+    top: 192%;
+    left: 0%;
+    width: 0%;
+    height: 92%;
+    background-color: crimson;
+}
+
+#secpg{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 92%;
+    background-color: blue;
+}
+#hangar {
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    height: 10%;
+    left: 44.5%;
+    background-image: url("hangar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#hangar2 {
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    height: 10%;
+    right: -18.5%;
+    background-image: url("hangar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#hangar3 {
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    height: 10%;
+    left: 12.5%;
+    background-image: url("hangar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rod {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 5px;
+    left: 0%;
+    background-color: black;
+}
+#srchbr {
+    position: fixed;
+    resize: none;
+    width: 60%;
+    top: 2%;
+    left: 17%;
+    height: 4%;
+    word-wrap: normal;
+    overflow: hidden;
+    font-size: x-large;
+}
+#topbar {
+    position: fixed;
+    resize: none;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 8%;
+    overflow: hidden;
+    background-color: wheat;
+}
+.homepg {
+    position: absolute;
+    top: 8%;
+    left: 0%;
+
+    
+}
+#frstpg {
+    width: 100%;
+    height: 92%;
+    background-color: wheat;
+    background-image: url("https://media.istockphoto.com/id/1329917226/vector/different-men-clothes-on-long-rolling-hanger-rack.jpg?s=1024x1024&w=is&k=20&c=n6PMl_MlqPejokODLRAa3MEb3DZ0lIcUpB49-RoFnds=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+#maincoat {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 225px;
+    height: 250px;
+    background-image: url("maincoat.png");
+    background-repeat: no-repeat;
+}
+
+#faqcoat {
+    position: fixed;
+    top: 30%;
+    right: 9.5%;
+    width: 225px;
+    height: 250px;
+    background-image: url("faqcoat.png");
+    background-repeat: no-repeat;
+}
+
+#aboutcoat {
+    position: fixed;
+    top: 30%;
+    left: 8%;
+    width: 225px;
+    height: 250px;
+    background-image: url("aboutcoat.png");
+    background-repeat: no-repeat;
+    
+}
+</style>
+</body>
+<script>
+    var maincoat = document.getElementById("maincoat")
+    var faqcoat = document.getElementById("faqcoat")
+    var frstpg = document.getElementById("frstpg")
+    var secpg = document.getElementById("secpg")
+    var thirdpg = document.getElementById("thirdpg")
+    var frthpg = document.getElementById("frthpg")
+    var faqpg = document.getElementById("faqpg")
+    var aboutcoat = document.getElementById("aboutcoat")
+    var aboutpg = document.getElementById("aboutpg")
+
+    maincoat.addEventListener("click",()=>{
+        maincoat.style.position = "fixed"
+        faqcoat.style.position = "absolute"
+        aboutcoat.style.position = "absolute"
+        aboutpg.style.width = "0%"
+        secpg.style.width = "100%"
+        thirdpg.style.width = "100%"
+        frthpg.style.width = "100%"
+        faqpg.style.width = "0%"
+        document.onscroll = function(){
+            if(maincoat.style.position == "fixed"){
+            maincoat.style.backgroundImage = "url('fallingmaincoat.png')"
+            }
+            console.log(rect(secpg))
+            if(rect(frstpg).top <=50 && rect(frstpg).top >= 0 || rect(secpg).top <= 40 && rect(secpg).top >= 0 || rect(thirdpg).top <= 110 && rect(thirdpg).top >= 0 || rect(frthpg).top <= 70 && rect(frthpg).top >= 0){
+                maincoat.style.backgroundImage = "url('maincoat.png')"
+            }
+        }
+    })
+
+    faqcoat.addEventListener("click",()=>{
+        maincoat.style.position = "absolute"
+        aboutcoat.style.position = "absolute"
+        faqcoat.style.position = "fixed"
+        faqpg.style.width = "100%"
+        secpg.style.width = "0%"
+        thirdpg.style.width = "0%"
+        frthpg.style.width = "0%"
+        aboutpg.style.width = "0%"
+        document.addEventListener("scroll",()=>{
+            if(faqcoat.style.position == "fixed"){
+            faqcoat.style.backgroundImage = "url('fallingfaqcoat.png')"
+            }
+            if(rect(faqpg).top <= 50 && rect(faqpg).top >= 0 || rect(frstpg).top <=50 && rect(frstpg).top >= 0 ){
+                faqcoat.style.backgroundImage = "url('faqcoat.png')"
+            }
+        })
+    })
+
+    function rect (object) {
+        return object.getBoundingClientRect()
+    } 
+
+
+</script>
+</html>
